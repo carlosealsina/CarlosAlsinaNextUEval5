@@ -6,6 +6,7 @@ var j= [6];
 var matriz= new Array(6);
 var matriz2= new Array(4);
 var matriz3= new Array(4);
+var matrizt= new Array(4);
 //console.log(matriz);
 /*-----------------------------
 // cambio entre dos colores indefinidamente
@@ -74,7 +75,7 @@ if(matriz[m][n]==matriz[m][(n+1)]){
 //console.log(n);
 //console.log("f");
 matriz2[l]=[matriz[m][n],m,n,"f"];
-console.log(matriz2);
+//console.log(matriz2);
 l++;
 }//cierre if
 }//cierre if
@@ -93,7 +94,7 @@ if(matriz[m][n]==matriz[(m+2)][n]){
 //console.log(n);
 //console.log("c");
 matriz3[l]=[matriz[m][n],m,n,"c"];
-console.log(matriz3);
+//console.log(matriz3);
 l++;
 	}//cierre if
 	
@@ -102,6 +103,9 @@ l++;
 }// cierre for m
 }// cierre for n
 //columnas
+
+matrizt=matriz2.concat(matriz3);
+console.log(matrizt);
 
 /*----------------------------
 // Función número aleatorio
